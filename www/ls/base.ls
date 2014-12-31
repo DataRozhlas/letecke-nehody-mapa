@@ -9,7 +9,8 @@ init = ->
   path = d3.geo.path!
     ..projection projection
 
-  container = d3.select ig.containers.base
+  container = d3.select ig.containers.base .append \div
+    ..attr \class \container
   svg = container.append \svg
     ..attr \class \map
     ..attr \width width
@@ -46,12 +47,12 @@ init = ->
   # fill = d3.scale.linear!
   #   ..domain bands.reverse!
   #   ..range range
-  svg.append \g .attr \class \airports-bg
+  aptCircles = svg.append \g .attr \class \airports-bg
     .selectAll \circle .data airports .enter!append \circle
       ..attr \r -> r it.fatalities
       ..attr \cx (.cx)
       ..attr \cy (.cy)
-  svg.append \g .attr \class \airports
+  aptCircleBgs = svg.append \g .attr \class \airports
     .selectAll \circle .data airports .enter!append \circle
       ..attr \r (.r)
       ..attr \cx (.cx)
@@ -65,7 +66,7 @@ init = ->
 
   graphTip = new ig.GraphTip container
 
-  container.append \svg
+  voronoiSvg = container.append \svg
     ..attr \class \voronoi
     ..attr \width width
     ..attr \height height
@@ -75,9 +76,43 @@ init = ->
         text = "<h2>#{point.name}<h2>"
         text += "<h3>#{point.city}, #{point.country}</h3>"
         text += "<p>Celkem <b>#{point.fatalities}</b> obětí</p>"
-        graphTip.display point.cx, point.cy - point.r, text
+        [x, y] = getPointDisplayedCenter point
+        graphTip.display x, y, text
       ..on \mouseout ->
         graphTip.hide!
+      ..on \click ({point}) ->
+        console.log point
+        zoomTo point.lat, point.lon
+  nonZoomCenter = projection [0, 0]
+  zoomCenter = null
+  zoomAmount = 1
+  zoomTranslation = null
+  zoomTo = (lat, lon) ->
+    coords = projection [lon, lat]
+    zoomCenter := coords
+    zoom = 8
+    zoomAmount := zoom
+    tX = width / 2 - coords.0
+    tY = height / 2 - coords.1
+    zoomTranslation := [tX, tY]
+    for elm in [svg, voronoiSvg]
+      elm.style \transform "scale(#zoom) translate(#{tX}px, #{tY}px)"
+      elm.classed \zoomed yes
+    zoomSqrt = Math.sqrt zoom
+    aptCircles.attr \r -> it.r / Math.sqrt zoomSqrt
+    aptCircleBgs.attr \r -> it.r / Math.sqrt zoomSqrt
+
+  getPointDisplayedCenter = (point) ->
+    out = [point.cx, point.cy]
+    if zoomCenter
+      out.0 = (width  / 2) + (zoomAmount * ((out.0 + zoomTranslation.0) - (width  / 2)))
+      out.1 = (height / 2) + (zoomAmount * ((out.1 + zoomTranslation.1) - (height / 2)))
+    out.1 -= point.r * Math.sqrt zoomAmount
+    out
+
+
+  # <~ setTimeout _, 500
+  # zoomTo 52.268028, 104.388975
 
 if d3?
   init!

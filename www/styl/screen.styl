@@ -7,10 +7,18 @@
   @import GraphTip
 .ig
   font-family 'Roboto', arial, helvetica, sans-serif
+  .container
+    position absolute
+    top 0px
+    left 0px
+    width 1000px
+    height 650px
+    overflow hidden
   svg
     position absolute
     top 0px
     left 0px
+    transition transform 0.6s
   svg.map
     z-index 1
     background lighten(ColorHeadingLink, 98.5%)
@@ -27,9 +35,12 @@
     .airports circle
       stroke #a50f15
       fill transparent
-      // fill white
-      // fill-opacity 0.5
-      // fill-opacity 0.8
+    &.zoomed
+      .land
+      .countries
+        stroke-width (1/8)
+      .airports circle
+        stroke-width (1/8)
   svg.voronoi
     z-index 3
     path
