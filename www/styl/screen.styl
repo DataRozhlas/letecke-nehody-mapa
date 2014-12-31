@@ -4,12 +4,15 @@
 
 .ig
   @import basics
+  @import GraphTip
 .ig
+  font-family 'Roboto', arial, helvetica, sans-serif
   svg
     position absolute
     top 0px
     left 0px
   svg.map
+    z-index 1
     background lighten(ColorHeadingLink, 98.5%)
     .land
       fill white
@@ -28,7 +31,22 @@
       // fill-opacity 0.5
       // fill-opacity 0.8
   svg.voronoi
+    z-index 3
     path
       fill transparent
       // stroke black
+  .graph-tip
+    z-index 2
+    h2
+      margin 0px
+      font-size 18px
+    h3
+      margin 0px
+      font-size 12px
+      margin-bottom 4px
+      font-weight normal
+      color #666
+    p
+      margin 0px
+      font-size 14px
 
