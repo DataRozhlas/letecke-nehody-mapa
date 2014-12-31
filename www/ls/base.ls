@@ -11,6 +11,7 @@ init = ->
 
   container = d3.select ig.containers.base
   svg = container.append \svg
+    ..attr \class \map
     ..attr \width width
     ..attr \height height
   svg.append \path
@@ -53,6 +54,19 @@ init = ->
       ..attr \r -> r it.fatalities
       ..attr \cx (.cx)
       ..attr \cy (.cy)
+
+  voronoi = d3.geom.voronoi!
+    ..x ~> it.cx
+    ..y ~> it.cy
+    ..clipExtent [[0, 0], [width, height - 100]]
+  voronoiPolygons = voronoi airports
+
+  container.append \svg
+    ..attr \class \voronoi
+    ..attr \width width
+    ..attr \height height
+    ..selectAll \path .data voronoiPolygons .enter!append \path
+      ..attr \d -> "M#{it.join "L"}Z"
 
 if d3?
   init!
