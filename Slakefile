@@ -12,11 +12,11 @@ externalStyles =
   # \https://samizdat.cz/tools/tooltip/v1.1.4.css
   ...
 
-externalData = {}
-  # "obce": "#__dirname/data/obce.json"
+externalData =
+  "world": "#__dirname/data/world.json"
 
 preferScripts = <[ postInit.js _loadData.js ../data.js init.js _loadExternal.js]>
-deferScripts = <[ kandidatka.js base.js ]>
+deferScripts = <[ geoUtils.js base.js ]>
 develOnlyScripts = <[ _loadData.js _loadExternal.js]>
 gzippable = <[ www/index.html www/script.js ]>
 build-styles = (options = {}, cb) ->
