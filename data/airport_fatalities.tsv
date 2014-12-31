@@ -1,0 +1,320 @@
+code	fatalities	x	y	name	city	country
+SSH	148	34.394722	27.977222	Sharm El Sheikh Intl	Sharm El Sheikh	Egypt
+SIN	162	103.994433	1.350189	Changi Intl	Singapore	Singapore
+CYPT	10	-82.678056	41.7775	Pelee Island Airport	Pelee	Canada
+YQG	10	-82.955556	42.275556	Windsor	Windsor	Canada
+HRM	1	3.311542	32.930431	Hassi R Mel	Tilrempt	Algeria
+GHA	1	3.794114	32.384106	Noumerat	Ghardaia	Algeria
+KIH	46	53.980211	26.526156	Kish Island	Kish Island	Iran
+SHJ	43	55.51715	25.328575	Sharjah Intl	Sharjah	United Arab Emirates
+CIA	8	12.594936	41.799361	Ciampino	Rome	Italy
+CAG	6	9.054283	39.251469	Elmas	Cagliari	Italy
+CBL	7	-63.537353	8.121898	Ciudad Bolivar	Ciudad Bolivar	Venezuela
+SVUQ	7	-61.7283	4.9833	Uon Quen	Uon Quen	Venezuela
+TFF	33	-64.724056	-3.382944	Tefe	Tefe	Brazil
+MAO	211	-60.049721	-3.038611	Eduardo Gomes Intl	Manaus	Brazil
+LBV	19	9.412283	0.4586	Leon M Ba	Libreville	Gabon
+MVB	19	13.438036	-1.656156	Mvengue	Franceville	Gabon
+UUBM	2	37.985	55.56	Myachkovo Airport	Moscow	Russia
+KLF	2	36.367	54.55	Grabtsevo	Kaluga	Russia
+VNX	2	35.313297	-22.018431	Vilankulo	Vilankulu	Mozambique
+PTY	167	-79.383453	9.071364	Tocumen Intl	Panama City	Panama
+IAD	7	-77.455811	38.944533	Washington Dulles Intl	Washington	United States
+TMJ	37	67.31	37.286667	Termez Airport	Termez	Uzbekistan
+TAS	37	69.281186	41.257861	Yuzhny	Tashkent	Uzbekistan
+DME	315	37.906111	55.408611	Domododevo	Moscow	Russia
+VOG	44	44.345544	48.782528	Gumrak	Volgograd	Russia
+AER	159	39.956589	43.449928	Sochi	Sochi	Russia
+STL	13	-90.370028	38.748697	Lambert St Louis Intl	St. Louis	United States
+IRK	13	-92.5449	40.0935	Kirksville Regional Airport	Kirksville	United States
+VIG	4	-71.672819	8.6241	Juan Pablo Pérez Alfonso Airport	El Vigía	Venezuela
+CCS	70	-66.990583	10.603117	Simon Bolivar Intl	Caracas	Venezuela
+BAV	55	109.997	40.56	Baotou Airport	Baotou	China
+SHA	55	121.336319	31.197875	Hongqiao Intl	Shanghai	China
+MTJ	3	-107.894242	38.509794	Montrose Regional Airport	Montrose CO	United States
+SBN	3	-86.31725	41.708661	South Bend Rgnl	South Bend	United States
+CGK	195	106.655897	-6.125567	Soekarno Hatta Intl	Jakarta	Indonesia
+SOC	25	110.756892	-7.516089	Adi Sumarmo Wiryokusumo	Solo City	Indonesia
+UNIW	9	102.31	60.355	Vanavara Airport	Vanavara	Russia
+UNIT	9	100.43	64.33	Tura	Tura	Russia
+HEA	104	62.2283	34.210017	Herat	Herat	Afghanistan
+KBL	148	69.212328	34.565853	Kabul Intl	Kabul	Afghanistan
+TBG	2	141.226	-5.27861	Tabubil Airport	Tabubil	Papua New Guinea
+BIZ	2	142.033	-5.2861111	Bimin Airport	Bimin	Papua New Guinea
+GLA	2	-4.433056	55.871944	Glasgow	Glasgow	United Kingdom
+CAL	2	-5.68639	55.4372	Campbeltown Airport	Campbeltown	United Kingdom
+USK	28	57.221113	66.00077	Usinsk	Usinsk	Russia
+PVA	9	-81.35833	13.356944	El Embrujo	Providencia	Colombia
+ADZ	11	-81.711192	12.583594	Gustavo Rojas Pinilla	San Andres Island	Colombia
+TIM	17	136.887375	-4.528275	Moses Kilangin	Timika	Indonesia
+EWI	17	136.377	-3.9259	Enarotali Airport	Enarotali	Indonesia
+THR	135	51.313416	35.689167	Mehrabad Intl	Teheran	Iran
+IRP	21	27.588253	2.827606	Matari	Isiro	Congo (Kinshasa)
+ABM	15	142.459444	-10.950833	Bamaga Injinoo	Amberley	Australia
+IRG	15	143.305	-12.7869	Lockhart River Airport	Lockhart River	Australia
+GOM	67	29.238464	-1.670814	Goma	Goma	Congo (Kinshasa)
+KND	27	25.915361	-2.919178	Kindu	Kindu	Congo (Kinshasa)
+KRT	69	32.553161	15.589497	Khartoum	Khartoum	Sudan
+ELF	7	25.32465	13.614892	El Fashir	El Fasher	Sudan
+SSG	60	8.708717	3.755267	Malabo	Malabo	Equatorial Guinea
+BSG	73	9.805681	1.905469	Bata	Bata	Equatorial Guinea
+BRI	16	16.760594	41.138856	Bari	Bari	Italy
+DJE	16	10.775461	33.875031	Zarzis	Djerba	Tunisia
+LCA	121	33.62485	34.875117	Larnaca	Larnaca	Cyprus
+ATH	121	23.944467	37.936358	Eleftherios Venizelos Intl	Athens	Greece
+PYH	1	-67.606103	5.619992	Casique Aramare	Puerto Ayacucho	Venezuela
+FDF	160	-61.003175	14.591033	Le Lamentin	Fort-de-france	Martinique
+LIM	49	-77.114319	-12.021889	Jorge Chavez Intl	Lima	Peru
+PCL	40	-74.574297	-8.377939	Cap Fap David Abenzur Rengifo Intl	Pucallpa	Peru
+MES	167	98.671722	3.558056	Polonia	Medan	Indonesia
+BNC	11	29.473889	0.575	Beni Airport	Beni	Congo (Democratic Republic)
+BNB	13	20.883333	-0.283333	Boende Airport	Boende	Congo (Democratic Republic)
+FKI	168	25.155014	0.5175	Kisangani Simisini	Kisangani	Congo (Kinshasa)
+BUX	2	30.220833	1.565719	Bunia	Bunia	Congo (Kinshasa)
+LOS	296	3.321156	6.577369	Murtala Muhammed	Lagos	Nigeria
+ABV	484	7.263172	9.006792	Nnamdi Azikiwe Intl	Abuja	Nigeria
+GYD	23	50.046667	40.4675	Heydar Aliyev	Baku	Azerbaijan
+SCO	23	51.091978	43.86005	Aktau	Aktau	Kazakhstan
+SPB	40	-122.861833	45.771028	Scappoose Industrial Airpark	San Luis	United States
+PHC	108	6.949594	5.015494	Port Harcourt Intl	Port Hartcourt	Nigeria
+BZE	3	-88.308203	17.539144	Philip S W Goldson Intl	Belize City	Belize
+YAZ	3	-125.7725	49.082222	Tofino	Tofino	Canada
+YVR	5	-123.184444	49.193889	Vancouver Intl	Vancouver	Canada
+CUE	5	-78.984397	-2.889467	Mariscal Lamar	Cuenca	Ecuador
+XMS	5	-78.12075	-2.299167	Coronel E Carvajal	Macas	Ecuador
+MEA	19	-41.766	-22.343	Macaé Airport	Macaé	Brazil
+SDU	19	-43.163133	-22.910461	Santos Dumont	Rio De Janeiro	Brazil
+RIB	9	-66	-11	Capitán Av. Selin Zeitun Lopez Airport	Riberalta	Bolivia
+GYA	1	-65.3456	-10.8206	Capitán de Av. Emilio Beltrán Airport	Guayaramerín	Bolivia
+KDH	5	65.847822	31.505756	Kandahar	Kandahar	Afghanistan
+BST	5	64.364167	31.558889	Bost Airport	Lashkar Gah	Afghanistan
+EVN	281	44.395881	40.147275	Zvartnots	Yerevan	Armenia
+SKH	9	81.636	28.586	Surkhet	Surkhet	Nepal
+JUM	27	82.193333	29.274167	Jumla	Jumla	Nepal
+IKT	125	104.388975	52.268028	Irkutsk	Irkutsk	Russia
+MUX	45	71.419111	30.203222	Multan Intl	Multan	Pakistan
+LHE	45	74.403594	31.521564	Allama Iqbal Intl	Lahore	Pakistan
+BKY	34	28.808803	-2.308978	Bukavu Kavumu	Bukavu/kavumu	Congo (Kinshasa)
+AAQ	170	37.347272	45.002097	Vityazevo	Anapa	Russia
+LED	170	30.262503	59.800292	Pulkovo	St. Petersburg	Russia
+LEX	49	-84.605889	38.0365	Blue Grass	Lexington KY	United States
+ATL	49	-84.428067	33.636719	Hartsfield Jackson Atlanta Intl	Atlanta	United States
+BND	28	56.37785	27.218317	Bandar Abbass Intl	Bandar Abbas	Iran
+MHD	44	59.643	36.234	Mashhad	Mashhad	Iran
+BSB	154	-47.918625	-15.8711	Presidente Juscelino Kubitschek	Brasilia	Brazil
+SVG	4	5.637856	58.876778	Sola	Stavanger	Norway
+SRP	4	5.34085	59.791925	Sorstokken	Stord	Norway
+SKO	96	5.207189	12.916322	Sadiq Abubakar Iii Intl	Sokoto	Nigeria
+LII	12	137.957	-3.7018	Mulia Airport	Mulia	Indonesia
+ILA	12	137.552182	-4.050219	Ilaga Airport	Ilaga	Indonesia
+YVC	1	-105.261944	55.15139	La Ronge	La Ronge	Canada
+GTF	3	-111.370689	47.482	Great Falls Intl	Great Falls	United States
+BZN	3	-111.160151	45.777643	Gallatin Field	Bozeman	United States
+NCA	1	-71.939561	21.917475	North Caicos	North Caicos	Turks and Caicos Islands
+GDT	1	-71.1423	21.4445	JAGS McCartney International Airport	Cockburn Town	Turks and Caicos Islands
+JOG	21	110.431758	-7.788181	Adi Sutjipto	Yogyakarta	Indonesia
+SGC	49	73.401842	61.343694	Surgut	Surgut	Russia
+KUF	6	50.15	53.5	Kurumoch	Samara	Russia
+KTO	3	-59.832199	4.64916	Kato Airport	Kato	Guyana
+DLA	114	9.719481	4.006081	Douala	Douala	Cameroon
+NBO	114	36.9275	-1.319167	Jomo Kenyatta International	Nairobi	Kenya
+SPON	13	-75.1521988	-6.89675	Orellana Airport	Orellana	Peru
+SPPH	13	-75.3000031	-7.1999998	Pampa Hermosa Airport	Pampa Hermosa	Peru
+MKE	6	-87.896583	42.947222	General Mitchell Intl	Milwaukee	United States
+YIP	6	-83.530408	42.237928	Willow Run	Detroit	United States
+KMN	1	25.252897	-8.642025	Kamina Base	Kamina Base	Congo (Kinshasa)
+FBM	1	27.530889	-11.591333	Lubumbashi Intl	Lubumashi	Congo (Kinshasa)
+REP	22	103.81284	13.410666	Siem Reap	Siem-reap	Cambodia
+KOS	22	103.636828	10.579686	Sihanoukville	Sihanoukville	Cambodia
+LAD	52	13.231178	-8.858375	Luanda 4 De Fevereiro	Luanda	Angola
+SSY	6	14.247025	-6.269897	Mbanza Congo	M'banza-congo	Angola
+IIA	2	-9.57	53.091944	Inishmaan Aerodrome	Inishmaan	Ireland
+EICA	2	-9.46778	53.2303	Connemara Regional Airport	Indreabhan	Ireland
+YXS	1	-122.678889	53.889444	Prince George	Prince George	Canada
+POA	199	-51.171428	-29.994428	Salgado Filho	Porto Alegre	Brazil
+CGH	199	-46.655375	-23.626692	Congonhas	Sao Paulo	Brazil
+MOZ	20	-149.761869	-17.489972	Moorea	Moorea	French Polynesia
+PPT	20	-149.611389	-17.556667	Faa\\'a International	Papeete	French Polynesia
+DMK	90	100.60675	13.912583	Don Muang Intl	Bangkok	Thailand
+HKT	90	98.316872	8.1132	Phuket Intl	Phuket	Thailand
+VVC	17	-73.613761	4.167875	Vanguardia	Villavicencio	Colombia
+URI	17	-74.4	3.2166667	Uribe Airport	Uribe	Colombia
+BOG	9	-74.146947	4.701594	Eldorado Intl	Bogota	Colombia
+LET	7	-69.943163	-4.193549	Alfredo Vasquez Cobo	Leticia	Colombia
+YVO	4	-77.782778	48.053333	Val D Or	Val D'or	Canada
+YMT	2	-74.5281	49.7719	Chapais Airport	Chibougamau	Canada
+IST	66	28.814606	40.976922	Ataturk	Istanbul	Turkey
+ISE	57	30.3684	37.8554	Isparta Süleyman Demirel Airport	Isparta	Turkey
+SUB	264	112.786858	-7.379831	Juanda	Surabaya	Indonesia
+MDC	102	124.925878	1.549447	Sam Ratulangi	Manado	Indonesia
+ADA	34	35.280388	36.982166	Adana	Adana	Turkey
+NOV	13	15.760547	-12.808878	Huambo	Huambo	Angola
+MRD	46	-71.161186	8.582294	Alberto Carnevalli	Merida	Venezuela
+ORG	27	-55.1907	5.81108	Zorg en Hoop Airport	Paramaribo	Suriname
+WUU	21	27.98	7.725	Wau Airport	Wau	Sudan
+RBX	21	29.669	6.825	Rumbek Airport	Rumbek	Sudan
+SAL	5	-89.055728	13.440947	El Salvador Intl	San Salvador	El Salvador
+TGU	19	-87.217197	14.060883	Toncontin Intl	Tegucigalpa	Honduras
+SCPF	10	-72.917583	-41.454222	Marcel Marchant Airport	Puerto Montt	Chile
+SCLJ	1	-72.413139	-43.977611	La Junta Airport	La Junta	Chile
+DAM	30	36.514267	33.410636	Damascus Intl	Damascus	Syria
+CAI	148	31.405556	30.121944	Cairo Intl	Cairo	Egypt
+MAD	154	-3.566764	40.493556	Barajas	Madrid	Spain
+LPA	154	-15.386586	27.931886	Gran Canaria	Gran Canaria	Spain
+FRU	65	74.477556	43.061306	Manas	Bishkek	Kyrgyzstan
+IKA	233	51.152222	35.416111	Imam Khomeini	Tehran	Iran
+GUA	11	-90.527475	14.583272	La Aurora	Guatemala City	Guatemala
+SVO	88	37.414589	55.972642	Sheremetyevo	Moscow	Russia
+PEE	88	56.021214	57.914517	Bolshoye Savino	Perm	Russia
+MQP	9	31.1056	-25.3832	Kruger Mpumalanga International Airport	Mpumalanga	South Africa
+FATP	9	26.157564	-29.032928	New Tempe	Bloemfontein	South Africa
+KTM	111	85.3591	27.696583	Tribhuvan Intl	Kathmandu	Nepal
+LUA	51	86.731389	27.687778	Lukla	Lukla	Nepal
+STI	12	-70.604689	19.406092	Cibao Intl	Santiago	Dominican Republic
+MYG	12	-73.0135	22.379528	Mayaguana	Mayaguana	Bahamas
+LRV	20	-66.67	11.95	Gran Roque Airport	Los Roques	Venezuela
+OLJ	2	166.55791	-14.881278	Olpoi-Lajmoli Airport	Olpoi-Lajmoli	Vanuatu
+SON	2	167.219742	-15.505033	Santo Pekoa International Airport	Santo	Vanuatu
+EWR	50	-74.168667	40.6925	Newark Liberty Intl	Newark	United States
+BUF	50	-78.732167	42.940525	Buffalo Niagara Intl	Buffalo	United States
+CIZ	24	-63.140833	-4.085	Coari Airport	Coari	Brazil
+AMS	9	4.763889	52.308613	Schiphol	Amsterdam	Netherlands
+SVCS	6	-66.816219	10.286589	Oscar Machado Zuloaga	Caracas	Venezuela
+VLV	6	-70.584089	9.340797	Dr Antonio Nicolas Briceno	Valera	Venezuela
+TUG	7	121.730614	17.638311	Tuguegarao Airport	Tuguegarao	Philippines
+CAJ	1	-62.854433	6.231989	Canaima	Canaima	Venezuela
+PMV	18	-63.967581	10.912926	Del Caribe Intl Gen Santiago Marino	Porlamar	Venezuela
+GIG	228	-43.243647	-22.808903	Galeao Antonio Carlos Jobim	Rio De Janeiro	Brazil
+CDG	228	2.55	49.012779	Charles De Gaulle	Paris	France
+YBX	1	-57.1853	51.4436	Lourdes De Blanc Sablon Airport	Lourdes-De-Blanc-Sablon	Canada
+YHA	1	-56.2861	52.5281	Port Hope Simpson Airport	Port Hope Simpson	Canada
+SAH	152	44.219739	15.476258	Sanaa Intl	Sanaa	Yemen
+HAH	152	43.27185	-11.533661	Prince Said Ibrahim	Moroni	Comoros
+DJJ	15	140.516372	-2.576953	Sentani	Jayapura	Indonesia
+OKL	15	140.6100006	-5.0910602	Oksibil Airport	Oksibil	Indonesia
+KBV	1	98.988764	8.095969	Krabi	Krabi	Thailand
+USM	1	100.062272	9.547794	Samui	Ko Samui	Thailand
+POM	21	147.22005	-9.443383	Port Moresby Jacksons Intl	Port Moresby	Papua New Guinea
+KKD	13	147.731	-8.88468	Kokoda Airport	Kokoda	Papua New Guinea
+CUR	1	-68.959803	12.188853	Hato	Willemstad	Netherlands Antilles
+BON	1	-68.268511	12.131044	Flamingo	Kralendijk	Netherlands Antilles
+BLQ	2	11.288667	44.535444	Bologna	Bologna	Italy
+YRC	2	-71.051661	48.521218	Saint-Honoré Aerodrome	Chicoutimi	Canada
+KGL	1	30.13945	-1.968628	Kigali Intl	Kigali	Rwanda
+EBB	1	32.443503	0.042386	Entebbe Intl	Entebbe	Uganda
+BEY	90	35.488389	33.820931	Rafic Hariri Intl	Beirut	Lebanon
+ADD	90	38.799319	8.977889	Bole Intl	Addis Ababa	Ethiopia
+BEL	2	-48.476292	-1.37925	Val De Cans Intl	Belem	Brazil
+SNWR	2	-51.9167	-2.5833	Senador José Porfírio	Wilma Rebelo	Brazil
+JNB	103	28.246	-26.139166	Johannesburg Intl	Johannesburg	South Africa
+TIP	103	13.159011	32.663544	Tripoli Intl	Tripoli	Libya
+SMGH	8	-54.786111	4.0575	Godo Holo Airstrip	Godo Holo	Suriname
+UND	44	68.910833	36.665111	Konduz	Kunduz	Afghanistan
+DXB	158	55.364444	25.252778	Dubai Intl	Dubai	United Arab Emirates
+IXE	158	74.890069	12.961267	Mangalore	Mangalore	India
+NSI	11	11.553269	3.722556	Yaounde Nsimalen	Yaounde	Cameroon
+YQB	7	-71.393333	46.791111	Quebec Jean Lesage Intl	Quebec	Canada
+YZV	7	-66.265556	50.223333	Sept Iles	Sept-iles	Canada
+KHI	300	67.160797	24.906547	Jinnah Intl	Karachi	Pakistan
+ISB	279	73.099233	33.616653	Chaklala	Islamabad	Pakistan
+UNKM	12	92.54265	56.179	Cheremshanka	Krasnoyarsk	Russia
+IAA	12	86.6219	67.4372	Igarka Airport	Igarka	Russia
+HRB	44	126.250328	45.623403	Taiping	Harbin	China
+LDS	44	129.018889	47.751944	Yichun Lindu Airport	Yichun	China
+FZBS	20	18.082758	-3.183548	Semendwa	Semendwa	Congo
+FDU	20	17.381683	-3.311319	Bandundu	Bandoundu	Congo (Kinshasa)
+MIS	4	152.838	-10.6892	Misima Island Airport	Misima Island	Papua New Guinea
+PZO	17	-62.760361	8.288528	General Manuel Carlos Piar	Guayana	Venezuela
+YXD	1	-113.520556	53.5725	Edmonton City Centre	Edmonton	Canada
+PAP	71	-72.292542	18.58005	Toussaint Louverture Intl	Port-au-prince	Haiti
+HAV	68	-82.409086	22.989153	Jose Marti Intl	Havana	Cuba
+VKO	2	37.261486	55.591531	Vnukovo	Moscow	Russia
+MCX	2	47.652294	42.816822	Uytash	Makhachkala	Russia
+LDN	22	86.670044	27.253117	Lamidanda	Lamidanda	Nepal
+GCI	5	-2.601969	49.434956	Guernsey	Guernsey	Guernsey
+IAR	44	40.157369454444	57.560666676667	Tunoshna	Yaroslavl	Russia
+MHP	44	27.539683	53.864472	Minsk 1	Minsk	Belarus
+PES	47	34.1547	61.8852	Petrozavodsk Airport	Petrozavodsk	Russia
+SRZ	8	-63.166667	-17.8	Santa Cruz	Santa Cruz	Bolivia
+TDD	16	-64.918019	-14.818739	Tte Av Jorge Henrich Arauz	Trinidad	Bolivia
+SOQ	25	131.121194	-0.926358	Jefman	Sorong	Indonesia
+KNG	25	133.695553	-3.644517	Kaimana	Kaimana	Indonesia
+FIH	109	15.444569	-4.38575	Ndjili Intl	Kinshasa	Congo (Kinshasa)
+SAP	14	-87.923556	15.452639	La Mesa Intl	San Pedro Sula	Honduras
+BHD	6	-5.8725	54.618056	Belfast City	Belfast	United Kingdom
+ORK	6	-8.491111	51.841269	Cork	Cork	Ireland
+OMH	77	45.0687	37.6681	Uromiyeh Airport	Uromiyeh	Iran
+OLH	1	-153.269722	57.218056	Old Harbor Airport	Old Harbor	United States
+ADQ	1	-152.493856	57.749967	Kodiak	Kodiak	United States
+CAP	3	-72.194739	19.732989	Cap Haitien Intl	Cap Haitien	Haiti
+YZF	14	-114.440278	62.462778	Yellowknife	Yellowknife	Canada
+YSG	2	-110.682	62.4183	Lutselk'e Airport	Lutselk'e	Canada
+LAE	28	146.726242	-6.569828	Nadzab	Nadzab	Papua New Guinea
+MAG	28	145.7887	-5.207083	Madang	Madang	Papua New Guinea
+YLW	2	-119.377778	49.956112	Kelowna	Kelowna	Canada
+NQN	22	-68.155711	-38.949	Presidente Peron	Neuquen	Argentina
+CRD	22	-67.465508	-45.785347	Comodoro Rivadavia	Comodoro Rivadavia	Argentina
+XPK	1	-101.265957	55.748592	Pukatawagan Airport	Pukatawagan	Canada
+YQD	1	-101.091	53.9714	The Pas Airport	The Pas	Canada
+TOF	7	85.208333	56.380278	Tomsk Bogashevo Airport	Tomsk	Russia
+REC	16	-34.923039	-8.126794	Guararapes Gilberto Freyre Intl	Recife	Brazil
+NAT	16	-35.247717	-5.911417	Augusto Severo	Natal	Brazil
+YRB	12	-94.969444	74.716944	Resolute Bay	Resolute	Canada
+PKR	33	83.982056	28.200881	Pokhara	Pokhara	Nepal
+JMO	15	83.7225	28.782222	Jomsom	Jomsom	Nepal
+TJM	33	65.3243	57.189567	Roschino	Tyumen	Russia
+PUQ	8	-70.854586	-53.002642	Carlos Ibanez Del Campo Intl	Punta Arenas	Chile
+SCL	8	-70.785803	-33.392975	Arturo Merino Benitez Intl	Santiago	Chile
+PKC	10	158.453669	53.167889	Yelizovo	Petropavlovsk	Russia
+UHPL	10	159.888333	59.081667	Palana Airport	Palana	Russia
+ANU	3	-61.792667	17.136749	V C Bird Intl	Antigua	Antigua and Barbuda
+MNI	3	-62.193333	16.791389	John A. Osborne Airport	Geralds	Montserrat
+YWG	2	-97.239886	49.910036	Winnipeg Intl	Winnipeg	Canada
+YSK	1	-79.2467	56.5378	Sanikiluaq Airport	Sanikiluaq	Canada
+MDL	2	95.977928	21.702156	Mandalay Intl	Mandalay	Burma
+HEH	2	96.792044	20.747036	Heho	Heho	Burma
+HTN	2	79.864933	37.038522	Hotan	Hotan	China
+URC	2	87.474244	43.907106	Diwopu	Urumqi	China
+SXQ	10	-151.0382389	60.4749583	Soldotna Airport	Soldotna	United States
+BET	4	-161.838	60.779778	Bethel	Bethel	United States
+KSM	4	-163.302	62.0605	St Marys Airport	St Mary's	United States
+KOV	21	69.5946	53.3291	Kokshetau Airport	Kokshetau	Kazakhstan
+ALA	21	77.040508	43.352072	Almaty	Alma-ata	Kazakhstan
+ODS	5	30.676464	46.426767	Odesa Intl	Odessa	Ukraine
+DOK	5	37.739722	48.073611	Donetsk Intl	Donetsk	Ukraine
+SPIS	9	-77.5472031	-7.8716998	Pias Airport	Pataz	Peru
+LUP	1	-156.974	21.211	Kalaupapa Airport	Molokai	United States
+HNL	1	-157.922428	21.318681	Honolulu Intl	Honolulu	United States
+SBCC	5	-54.965422	-9.333936	Cachimbo	Itaituba	Brazil
+MPM	33	32.572606	-25.920836	Maputo	Maputo	Mozambique
+KUY	3	143.122	-7.42035	Kamusi Airport	Kamusi	Papua New Guinea
+KZN	50	49.278728	55.606186	Kazan	Kazan	Russia
+YXL	5	-91.905278	50.113889	Sioux Lookout	Sioux Lookout	Canada
+YRL	5	-93.7931	51.0669	Red Lake Airport	Red Lake	Canada
+VTE	49	102.563256	17.988322	Wattay Intl	Vientiane	Laos
+PKZ	49	105.781417	15.132053	Pakse	Pakse	Laos
+LTO	14	-111.348361	25.989194	Loreto Intl	Loreto	Mexico
+CUA	14	-111.615	25.0538	Ciudad Constitución Airport	Ciudad Constitución	Mexico
+BKI	2	116.051181	5.937208	Kota Kinabalu Intl	Kota Kinabalu	Malaysia
+KUD	2	116.836	6.9225	Kudat Airport	Kudat	Malaysia
+AKR	16	5.301008	7.246739	Akure	Akure	Nigeria
+RKV	2	-21.940556	64.13	Reykjavik	Reykjavik	Iceland
+AEY	2	-18.072703	65.659994	Akureyri	Akureyri	Iceland
+ICN	3	126.450517	37.469075	Incheon Intl	Seoul	South Korea
+SFO	3	-122.374889	37.618972	San Francisco Intl	San Francisco	United States
+BBU	2	26.102111	44.503194	Aurel Vlaicu	Bucharest	Romania
+OMR	2	21.9025	47.025278	Oradea	Oradea	Romania
+TUN	11	10.227217	36.851033	Carthage	Tunis	Tunisia
+KUL	239	101.709917	2.745578	Kuala Lumpur Intl	Kuala Lumpur	Malaysia
+PEK	239	116.584556	40.080111	Capital Intl	Beijing	China
+CZM	8	-86.925644	20.522403	Cozumel Intl	Cozumel	Mexico
+SLW	8	-100.928669	25.549497	Plan De Guadalupe Intl	Saltillo	Mexico
+RUH	1	46.698776	24.95764	King Khaled Intl	Riyadh	Saudi Arabia
+PEW	1	71.514581	33.993911	Peshawar Intl	Peshawar	Pakistan
+KHH	48	120.350006	22.577094	Kaohsiung Intl	Kaohsiung	Taiwan
+MZG	48	119.628311	23.568669	Magong	Makung	Taiwan
+OUA	116	-1.512417	12.353194	Ouagadougou	Ouagadougou	Burkina Faso
+ALG	116	3.215408	36.691014	Houari Boumediene	Algier	Algeria
+TCX	39	56.924444	33.595833	Tabas Airport	Tabas	Iran
+WTP	4	147.25	-8.533	Woitape Airport	Woitape	Papua New Guinea
+SCMK	9	-73.738694	-43.894417	Melinka Airport	Melinka	Chile
