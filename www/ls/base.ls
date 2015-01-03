@@ -88,6 +88,7 @@ init = ->
   zoomAmount = 1
   zoomTranslation = null
   zoomTo = (lat, lon) ->
+    backbutton.classed \hidden no
     coords = projection [lon, lat]
     zoomCenter := coords
     zoom = 8
@@ -103,6 +104,7 @@ init = ->
     aptCircleBgs.attr \r -> it.r / zoomSqrt
 
   zoomOut = ->
+    backbutton.classed \hidden yes
     nonZoomCenter := projection [0, 0]
     zoomCenter := null
     zoomAmount := 1
@@ -121,6 +123,10 @@ init = ->
       out.1 = (height / 2) + (zoomAmount * ((out.1 + zoomTranslation.1) - (height / 2)))
     out.1 -= zoomAmount * point.r / Math.sqrt zoomAmount
     out
+
+  backbutton = ig.utils.backbutton container
+    ..on \click zoomOut
+    ..attr \class "backbutton backbutton-map hidden"
 
 if d3?
   init!

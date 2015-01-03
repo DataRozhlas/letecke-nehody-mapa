@@ -1,0 +1,42 @@
+a.backbutton-map
+    position absolute
+    top 10px
+    left 0px
+    width 120px
+    height 47px
+    z-index 4
+    transition left 0.6s
+    &.hidden
+      left -150px
+    svg
+      background lighten(ColorHeadingLink, 98%)
+      border 3px solid ColorHeadingLink
+      border-radius 50%
+      position absolute
+      top 5px
+      left 40px
+      width 38px
+      height 38px
+      path
+        fill ColorHeadingLink
+    &:hover
+      svg
+        background lighten(ColorHeadingLink, 90%)
+      cursor pointer
+    &:active
+      svg
+        background ColorHeadingLink
+        path
+          fill white
+    &:before
+      content ""
+      position absolute
+      top 0px
+      left -18px
+      width 100%
+      height 100%
+      border-right 3px solid ColorHeading
+      border-bottom 1px solid rgba(ColorHeading, 0.2)
+      border-top 1px solid rgba(ColorHeading, 0.2)
+      background white
+      transform skew(-30deg, 0deg)
