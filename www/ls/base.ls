@@ -99,15 +99,15 @@ init = ->
       elm.style \transform "scale(#zoom) translate(#{tX}px, #{tY}px)"
       elm.classed \zoomed yes
     zoomSqrt = Math.sqrt zoom
-    aptCircles.attr \r -> it.r / Math.sqrt zoomSqrt
-    aptCircleBgs.attr \r -> it.r / Math.sqrt zoomSqrt
+    aptCircles.attr \r -> it.r / zoomSqrt
+    aptCircleBgs.attr \r -> it.r / zoomSqrt
 
   getPointDisplayedCenter = (point) ->
     out = [point.cx, point.cy]
     if zoomCenter
       out.0 = (width  / 2) + (zoomAmount * ((out.0 + zoomTranslation.0) - (width  / 2)))
       out.1 = (height / 2) + (zoomAmount * ((out.1 + zoomTranslation.1) - (height / 2)))
-    out.1 -= point.r * Math.sqrt zoomAmount
+    out.1 -= zoomAmount * point.r / Math.sqrt zoomAmount
     out
 
 
