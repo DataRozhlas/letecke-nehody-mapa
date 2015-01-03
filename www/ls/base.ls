@@ -102,6 +102,18 @@ init = ->
     aptCircles.attr \r -> it.r / zoomSqrt
     aptCircleBgs.attr \r -> it.r / zoomSqrt
 
+  zoomOut = ->
+    nonZoomCenter := projection [0, 0]
+    zoomCenter := null
+    zoomAmount := 1
+    zoomTranslation := null
+    for elm in [svg, voronoiSvg]
+      elm.style \transform ""
+      elm.classed \zoomed no
+    aptCircles.attr \r -> it.r
+    aptCircleBgs.attr \r -> it.r
+
+
   getPointDisplayedCenter = (point) ->
     out = [point.cx, point.cy]
     if zoomCenter
@@ -109,10 +121,6 @@ init = ->
       out.1 = (height / 2) + (zoomAmount * ((out.1 + zoomTranslation.1) - (height / 2)))
     out.1 -= zoomAmount * point.r / Math.sqrt zoomAmount
     out
-
-
-  # <~ setTimeout _, 500
-  # zoomTo 52.268028, 104.388975
 
 if d3?
   init!
