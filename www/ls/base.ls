@@ -58,6 +58,9 @@ init = ->
       ..attr \cx (.cx)
       ..attr \cy (.cy)
 
+  activeApt = svg.append \circle
+    ..attr \class "airport-active disabled"
+
   voronoi = d3.geom.voronoi!
     ..x ~> it.cx
     ..y ~> it.cy
@@ -78,7 +81,14 @@ init = ->
         text += "<p>Celkem <b>#{point.fatalities}</b> obětí</p>"
         [x, y] = getPointDisplayedCenter point
         graphTip.display x, y, text
+        activeApt
+          ..datum point
+          ..attr \r point.r / Math.sqrt zoomAmount
+          ..attr \cx point.cx
+          ..attr \cy point.cy
+          ..classed \disabled no
       ..on \mouseout ->
+        activeApt.classed \disabled yes
         graphTip.hide!
       ..on \click ({point}) ->
         console.log point
