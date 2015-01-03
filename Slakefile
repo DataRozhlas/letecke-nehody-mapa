@@ -15,6 +15,7 @@ externalStyles =
 externalData =
   "world": "#__dirname/data/world.json"
   "airports": "#__dirname/data/airport_fatalities.tsv"
+  "events": "#__dirname/data/stats.tsv"
 
 preferScripts = <[ postInit.js _loadData.js ../data.js init.js _loadExternal.js]>
 deferScripts = <[ geoUtils.js base.js ]>

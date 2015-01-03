@@ -1,0 +1,45 @@
+.incident-list
+  position absolute
+  z-index 5
+  top 0px
+  left -400px
+  bottom 0px
+  width 400px
+  background white
+  border-right 1px solid #aaa
+  overflow auto
+  transition left 0.6s
+  &.active
+    left 0px
+  h3
+  ul li
+    padding-left 40px
+    padding-right 10px
+  h3
+    padding-left 100px
+    min-height 45px
+  ul
+    list-style-type none
+    margin 0px
+    padding 0px
+    li
+      padding-top 10px
+      padding-bottom 10px
+      border-top 1px dotted #aaa
+    h4
+      margin 0px
+    .fatalities
+      display block
+    .dep-dest:after
+      content ", "
+    .dep-dest
+    .date
+      font-size 12px
+    a
+      display block
+
+  abbr
+    border-bottom 1px dotted black
+    cursor help
+    &.other
+      color ColorLink

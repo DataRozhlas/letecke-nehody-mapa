@@ -37,6 +37,9 @@ init = ->
     row.cy = coords.1
     row.r = r row.fatalities
     row
+  airportsAssoc = {}
+  for airport in airports
+    airportsAssoc[airport.code] = airport
   # range = ['rgb(255,245,240)','rgb(254,224,210)','rgb(252,187,161)','rgb(252,146,114)','rgb(251,106,74)','rgb(239,59,44)','rgb(203,24,29)','rgb(165,15,21)','rgb(103,0,13)']
   # len = airports.length
   # step = Math.floor len / (range.length - 2)
@@ -90,13 +93,15 @@ init = ->
       ..on \mouseout ->
         activeApt.classed \disabled yes
         graphTip.hide!
-      ..on \click ({point}) ->
-        console.log point
-        zoomTo point.lat, point.lon
+      ..on \click ({point}) -> onAptClick point
+
   nonZoomCenter = projection [0, 0]
   zoomCenter = null
   zoomAmount = 1
   zoomTranslation = null
+  ig.onAptClick = onAptClick = (point) ->
+    displayIncident point
+    zoomTo point.lat, point.lon
   zoomTo = (lat, lon) ->
     backbutton.classed \hidden no
     coords = projection [lon, lat]
@@ -113,7 +118,7 @@ init = ->
     aptCircles.attr \r -> it.r / zoomSqrt
     aptCircleBgs.attr \r -> it.r / zoomSqrt
 
-  zoomOut = ->
+  ig.zoomOut = zoomOut = ->
     backbutton.classed \hidden yes
     nonZoomCenter := projection [0, 0]
     zoomCenter := null
@@ -134,9 +139,16 @@ init = ->
     out.1 -= zoomAmount * point.r / Math.sqrt zoomAmount
     out
 
+  displayIncident = (point) ->
+    incidentList.display point
+
+  incidentList = new ig.IncidentList container, airportsAssoc
+
   backbutton = ig.utils.backbutton container
     ..on \click zoomOut
     ..attr \class "backbutton backbutton-map hidden"
+
+  incidentList.display airports.0
 
 if d3?
   init!
