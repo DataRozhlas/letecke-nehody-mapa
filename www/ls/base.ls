@@ -133,8 +133,9 @@ init = ->
     zoomCenter := coords
     zoom = 8
     zoomAmount := zoom
-    tX = width / 2 - coords.0
-    tY = height / 2 - coords.1
+    incidentListWidth = 400
+    tX = (width / 2 + (incidentListWidth / 2 / zoomAmount)) - coords.0
+    tY = (height / 2) - coords.1
     zoomTranslation := [tX, tY]
     for elm in [svg, voronoiSvg]
       elm.style \transform "scale(#zoom) translate(#{tX}px, #{tY}px)"
