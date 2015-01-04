@@ -95,7 +95,8 @@ init = ->
       ..on \mouseover ({point}) ->
         text = "<h2>#{point.name}<h2>"
         text += "<h3>#{point.city}, #{point.country}</h3>"
-        text += "<p>Celkem <b>#{point.fatalities}</b> obětí</p>"
+        incidentsPlural = if point.incidents.length == 1 then "nehodě" else "nehodách"
+        text += "<p>Celkem <b>#{point.fatalities}</b> obětí při #{point.incidents.length} #incidentsPlural</p>"
         [x, y] = getPointDisplayedCenter point
         graphTip.display x, y, text
         activeApt
