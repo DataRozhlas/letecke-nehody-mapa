@@ -17,7 +17,7 @@ class ig.IncidentList
     aptCode = point.code
     events = @allEvents.filter -> it.dep == aptCode or it.dest == aptCode
     @element.classed \active yes
-    @header.html "Nehody z/na letiště #{point.name}."
+    @header.html "Nehody z/na letiště #{point.name}"
     @element.node!scrollTop = 0
     @list.selectAll \li .remove!
     events = events.slice!sort (a, b) -> b.fatalities - a.fatalities
