@@ -1,16 +1,7 @@
 months = <[ledna února března dubna května června července srpna září října listopadu prosince]>
 
-allEvents = d3.tsv.parse ig.data.events, (row) ->
-  row.fatalities = parseInt row.fatalities, 10
-  row.date = new Date!
-    ..setTime 0
-    ..setFullYear row.file.substr 0, 4
-    ..setMonth (parseInt((row.file.substr 4, 2), 10) - 1)
-    ..setDate row.file.substr 6, 2
-  row
-
 class ig.IncidentList
-  (@parentElement, @airportsAssoc) ->
+  (@parentElement, @airportsAssoc, @allEvents) ->
     @element = @parentElement.append \div
       ..attr \class \incident-list
     ig.utils.backbutton @element
@@ -24,7 +15,7 @@ class ig.IncidentList
 
   display: (point) ->
     aptCode = point.code
-    events = allEvents.filter -> it.dep == aptCode or it.dest == aptCode
+    events = @allEvents.filter -> it.dep == aptCode or it.dest == aptCode
     @element.classed \active yes
     @header.html "Nehody z/na letiště #{point.name}."
     @element.node!scrollTop = 0

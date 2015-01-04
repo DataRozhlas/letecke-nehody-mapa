@@ -23,6 +23,8 @@ init = ->
     ..attr \class \countries
     ..datum topojson.mesh world, world.objects.countries, (a, b) -> a isnt b
     ..attr \d path
+  aptLinkGroup = svg.append \g
+    ..attr \class \apt-link
 
   r = d3.scale.sqrt!
     ..domain [0 484]
@@ -32,6 +34,7 @@ init = ->
     row.lon = parseFloat row.x
     row.lat = parseFloat row.y
     row.fatalities = parseInt row.fatalities, 10
+    row.incidents = []
     coords = projection [row.lon, row.lat]
     row.cx = coords.0
     row.cy = coords.1
@@ -40,16 +43,20 @@ init = ->
   airportsAssoc = {}
   for airport in airports
     airportsAssoc[airport.code] = airport
-  # range = ['rgb(255,245,240)','rgb(254,224,210)','rgb(252,187,161)','rgb(252,146,114)','rgb(251,106,74)','rgb(239,59,44)','rgb(203,24,29)','rgb(165,15,21)','rgb(103,0,13)']
-  # len = airports.length
-  # step = Math.floor len / (range.length - 2)
-  # airports.sort (a, b) -> b.fatalities - a.fatalities
-  # bands = for i in [0 to len by step]
-  #   airports[i].fatalities
-  # bands.push 0
-  # fill = d3.scale.linear!
-  #   ..domain bands.reverse!
-  #   ..range range
+
+  allEvents = d3.tsv.parse ig.data.events, (row) ->
+    row.fatalities = parseInt row.fatalities, 10
+    row.date = new Date!
+      ..setTime 0
+      ..setFullYear row.file.substr 0, 4
+      ..setMonth (parseInt((row.file.substr 4, 2), 10) - 1)
+      ..setDate row.file.substr 6, 2
+    row
+
+  for event in allEvents
+    airportsAssoc[event.dep]?incidents.push event
+    airportsAssoc[event.dest]?incidents.push event
+
   aptCircles = svg.append \g .attr \class \airports-bg
     .selectAll \circle .data airports .enter!append \circle
       ..attr \r -> r it.fatalities
@@ -90,9 +97,11 @@ init = ->
           ..attr \cx point.cx
           ..attr \cy point.cy
           ..classed \disabled no
+        drawAirportLine point
       ..on \mouseout ->
         activeApt.classed \disabled yes
         graphTip.hide!
+        unDrawLines!
       ..on \click ({point}) -> onAptClick point
 
   nonZoomCenter = projection [0, 0]
@@ -142,13 +151,31 @@ init = ->
   displayIncident = (point) ->
     incidentList.display point
 
-  incidentList = new ig.IncidentList container, airportsAssoc
+  drawAirportLine = (apt) ->
+    drawLine do
+      apt.incidents
+        .filter -> airportsAssoc[it.dep] and airportsAssoc[it.dest]
+        .map -> [airportsAssoc[it.dep], airportsAssoc[it.dest]]
+
+
+  drawLine = (aptList) ->
+    defs = for aptPair in aptList
+      feature =
+        type: \LineString
+        coordinates: aptPair.map -> [it.lon, it.lat]
+      path feature
+    aptLinkGroup.selectAll \path .data defs .enter!append \path
+      ..attr \d -> it
+
+  unDrawLines = ->
+    aptLinkGroup.selectAll \path .remove!
+
+  incidentList = new ig.IncidentList container, airportsAssoc, allEvents
 
   backbutton = ig.utils.backbutton container
     ..on \click zoomOut
     ..attr \class "backbutton backbutton-map hidden"
 
-  incidentList.display airports.0
 
 if d3?
   init!

@@ -41,12 +41,19 @@
       fill ColorHeading
       &.disabled
         display none
+    .apt-link path
+      stroke ColorHeading
+      stroke-width 3
+      fill none
     &.zoomed
       .land
       .countries
         stroke-width (1/8)
       .airports circle
         stroke-width (1/8)
+      .apt-link path
+        stroke-width (3/8)
+
   svg.voronoi
     z-index 3
     path
