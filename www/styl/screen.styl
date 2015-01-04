@@ -38,13 +38,19 @@
       stroke #a50f15
       fill transparent
     .airport-active
+    .airport-selected
       fill ColorHeading
       &.disabled
         display none
+    .airport-selected
+      fill ColorHeadingLink
     .apt-link path
+    .active-apt-link path
       stroke ColorHeading
       stroke-width 3
       fill none
+    .active-apt-link path
+      stroke ColorHeadingLink
     &.zoomed
       .land
       .countries
@@ -52,6 +58,7 @@
       .airports circle
         stroke-width (1/8)
       .apt-link path
+      .active-apt-link path
         stroke-width (3/8)
 
   svg.voronoi

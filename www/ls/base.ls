@@ -23,6 +23,10 @@ init = ->
     ..attr \class \countries
     ..datum topojson.mesh world, world.objects.countries, (a, b) -> a isnt b
     ..attr \d path
+
+  activeAptLinkGroup = svg.append \g
+    ..attr \class \active-apt-link
+
   aptLinkGroup = svg.append \g
     ..attr \class \apt-link
 
@@ -68,6 +72,9 @@ init = ->
       ..attr \cx (.cx)
       ..attr \cy (.cy)
 
+  selectedApt = svg.append \circle
+    ..attr \class "airport-selected disabled"
+
   activeApt = svg.append \circle
     ..attr \class "airport-active disabled"
 
@@ -110,7 +117,15 @@ init = ->
   zoomTranslation = null
   ig.onAptClick = onAptClick = (point) ->
     displayIncident point
+    selectedApt
+      ..datum point
+      ..attr \r point.r / Math.sqrt zoomAmount
+      ..attr \cx point.cx
+      ..attr \cy point.cy
+      ..classed \disabled no
     zoomTo point.lat, point.lon
+    drawAirportLine point, activeAptLinkGroup
+
   zoomTo = (lat, lon) ->
     backbutton.classed \hidden no
     coords = projection [lon, lat]
@@ -136,6 +151,8 @@ init = ->
       elm.style \transform ""
       elm.classed \zoomed no
     svg.selectAll \circle .attr \r (.r)
+    selectedApt.classed \disabled yes
+    unDrawLines activeAptLinkGroup
 
 
   getPointDisplayedCenter = (point) ->
@@ -149,24 +166,28 @@ init = ->
   displayIncident = (point) ->
     incidentList.display point
 
-  drawAirportLine = (apt) ->
+  drawAirportLine = (apt, targetGroup) ->
     drawLine do
       apt.incidents
         .filter -> airportsAssoc[it.dep] and airportsAssoc[it.dest]
         .map -> [airportsAssoc[it.dep], airportsAssoc[it.dest]]
+      targetGroup
 
 
-  drawLine = (aptList) ->
+  drawLine = (aptList, targetGroup) ->
+    targetGroup ?= aptLinkGroup
     defs = for aptPair in aptList
       feature =
         type: \LineString
         coordinates: aptPair.map -> [it.lon, it.lat]
       path feature
-    aptLinkGroup.selectAll \path .data defs .enter!append \path
+    targetGroup.selectAll \path .remove!
+    targetGroup.selectAll \path .data defs .enter!append \path
       ..attr \d -> it
 
-  unDrawLines = ->
-    aptLinkGroup.selectAll \path .remove!
+  unDrawLines = (targetGroup) ->
+    targetGroup ?= aptLinkGroup
+    targetGroup.selectAll \path .remove!
 
   incidentList = new ig.IncidentList container, airportsAssoc, allEvents
 
