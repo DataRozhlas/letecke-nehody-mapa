@@ -37,18 +37,18 @@ class ig.IncidentList
           ..append \abbr
             ..attr \class \dep
             ..html -> it.dep || "???"
-            ..attr \title ~> @airportsAssoc[it.dep].name
+            ..attr \title ~> @airportsAssoc[it.dep]?name || void
             ..on \click ~> ig.onAptClick @airportsAssoc[it.dep]
-            ..classed \other -> it.dep != aptCode
+            ..classed \other ~> it.dep != aptCode and @airportsAssoc[it.dep]
           ..append \span
             ..attr \class \sep
             ..html " – "
           ..append \abbr
             ..attr \class \dest
             ..html -> it.dest || "???"
-            ..attr \title ~> @airportsAssoc[it.dest].name
+            ..attr \title ~> @airportsAssoc[it.dest]?name || void
             ..on \click ~> ig.onAptClick @airportsAssoc[it.dest]
-            ..classed \other -> it.dest != aptCode
+            ..classed \other ~> it.dest != aptCode and @airportsAssoc[it.dest]
       ..append \span
         ..attr \class \date
         ..html -> "#{it.date.getDate!}. #{months[it.date.getMonth!]} #{it.date.getFullYear!}"
