@@ -124,8 +124,7 @@ init = ->
       elm.style \transform "scale(#zoom) translate(#{tX}px, #{tY}px)"
       elm.classed \zoomed yes
     zoomSqrt = Math.sqrt zoom
-    aptCircles.attr \r -> it.r / zoomSqrt
-    aptCircleBgs.attr \r -> it.r / zoomSqrt
+    svg.selectAll \circle .attr \r (.r / zoomSqrt)
 
   ig.zoomOut = zoomOut = ->
     backbutton.classed \hidden yes
@@ -136,8 +135,7 @@ init = ->
     for elm in [svg, voronoiSvg]
       elm.style \transform ""
       elm.classed \zoomed no
-    aptCircles.attr \r -> it.r
-    aptCircleBgs.attr \r -> it.r
+    svg.selectAll \circle .attr \r (.r)
 
 
   getPointDisplayedCenter = (point) ->
