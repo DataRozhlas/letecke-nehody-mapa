@@ -102,7 +102,11 @@ init = ->
         text = "<h2>#{point.name}<h2>"
         text += "<h3>#{point.city}, #{point.country}</h3>"
         incidentsPlural = if point.incidents.length == 1 then "nehodě" else "nehodách"
-        text += "<p>Celkem <b>#{point.fatalities}</b> obětí při #{point.incidents.length} #incidentsPlural</p>"
+        fatalitiesPlural =
+          | point.fatalities == 1 => 'oběť'
+          | point.fatalities < 5 => 'oběti'
+          | otherwise => 'obětí'
+        text += "<p>Celkem <b>#{point.fatalities}</b> #fatalitiesPlural při #{point.incidents.length} #incidentsPlural</p>"
         [x, y] = getPointDisplayedCenter point
         graphTip.display x, y, text
         activeApt
