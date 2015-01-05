@@ -3,14 +3,11 @@ fatalities	file	type	opr	dep	dest
 10	20040117-0	Cessna 208B Grand Caravan	Georgian Express	CYPT	YQG
 1	20040128-0	Beechcraft 1900D	Tassili Airlines	HRM	GHA
 43	20040210-0	Fokker 50	Kish Air	KIH	SHJ
-6	20040224-0	Cessna 500 Citation I	City-jet Luftfahrtgesellschaft	CIA	CAG
 7	20040504-0	Cessna 208B Grand Caravan	Gobernación del Estado Bolívar	CBL	SVUQ
 33	20040514-0	Embraer 120ER Brasilia	Rico Linhas Aéreas	TFF	MAO
 1	20040518-1	Antonov 2P	Araiavia		
 19	20040608-0	Hawker Siddeley HS-748-232 Srs. 2A	Gabon Express	LBV	MVB
 2	20040626-0	Lisunov Li-2T	FLA RF	UUBM	KLF
-2	20040628-0	Beechcraft 200 Super King Air	Ngangeni Air Charters		VNX
-7	20040702-0	IAI 1124 Westwind	Air Trek	PTY	IAD
 37	20040113-0	Yakovlev 40	Uzbekistan Airways	TMJ	TAS
 44	20040824-0	Tupolev 134A-3	Volga-Aviaexpress	DME	VOG
 46	20040824-1	Tupolev 154B-2	Sibir Airlines	DME	AER
@@ -22,7 +19,6 @@ fatalities	file	type	opr	dep	dest
 9	20050113-1	Antonov 2	Tura Air Enterprise	UNIW	UNIT
 104	20050203-1	Boeing 737-242		HEA	KBL
 2	20050222-0	de Havilland Canada DHC-6 Twin Otter 300	MAF PNG - Missionary Aviation Fellowship	TBG	BIZ
-2	20050315-0	Pilatus Britten-Norman BN-2B-26 Islander	Loganair	GLA	CAL
 28	20050316-0	Antonov 24RV		USK	
 9	20050326-0	Let L-410UVP-E	West Caribbean Airways	PVA	ADZ
 17	20050412-0	de Havilland Canada DHC-6 Twin Otter 100	GT Air	TIM	EWI
@@ -63,15 +59,12 @@ fatalities	file	type	opr	dep	dest
 4	20061010-0	British Aerospace BAe-146-200A	Atlantic Airways	SVG	SRP
 96	20061029-0	Boeing 737-2B7	ADC Airlines	ABV	SKO
 12	20061117-0	de Havilland Canada DHC-6 Twin Otter 300	Trigana Air Service	LII	ILA
-1	20070107-0	Beechcraft A100 King Air	Transwest Air	YVC	
-3	20070206-0	Beechcraft 200 Super King Air	Metro Aviation	GTF	BZN
 1	20070206-1	Beechcraft 200C Super King Air	Air Turks & Caicos (2003)	NCA	GDT
 21	20070307-0	Boeing 737-497	Garuda Indonesia Airways	CGK	JOG
 6	20070317-0	Tupolev 134A-3	UTAir	SGC	KUF
 3	20070425-0	Britten-Norman BN-2A-27 Islander	Air Services	KTO	
 114	20070505-0	Boeing 737-8AL	Kenya Airways	DLA	NBO
 13	20070524-0	de Havilland Canada DHC-6 Twin Otter 300	Fuerza Aérea del Peru - FAP	SPON	SPPH
-6	20070604-0	Cessna 550 Citation II	Marlin Air	MKE	YIP
 1	20070621-0	Let L-410UVP	Karibu Airways	KMN	FBM
 22	20070625-0	Antonov 24B	PMT Air	REP	KOS
 6	20070628-0	Boeing 737-2M2	TAAG Angola Airlines	LAD	SSY
@@ -81,7 +74,6 @@ fatalities	file	type	opr	dep	dest
 20	20070809-0	de Havilland Canada DHC-6 Twin Otter 300	Air Moorea	MOZ	PPT
 90	20070916-0	McDonnell Douglas MD-82	One-Two-Go Airlines	DMK	HKT
 17	20071008-0	Let L-410UVP-E10A	Nacional de Aviación	VVC	URI
-7	20071011-1	Beechcraft B200 Super King Air	Rio Sur	BOG	LET
 2	20071025-0	Beechcraft A100 King Air	Air Creebec	YVO	YMT
 57	20071130-0	McDonnell Douglas MD-83		IST	ISE
 102	20070101-0	Boeing 737-4Q8	AdamAir	SUB	MDC
@@ -113,7 +105,6 @@ fatalities	file	type	opr	dep	dest
 7	20090402-0	Britten-Norman BN-2A Islander	Chemtrad Aviation	TUG	
 1	20090417-0	Cessna 208B Grand Caravan	Línea Turística Aereotuy - LTA	CAJ	PMV
 228	20090601-0	Airbus A330-203	Air France	GIG	CDG
-1	20090607-0	Britten-Norman BN-2A-27 Islander	Strait Air	YBX	YHA
 152	20090630-0	Airbus A310-324	Yemenia Airways	SAH	HAH
 168	20090715-0	Tupolev 154M	Caspian Airlines	IKA	EVN
 16	20090724-0	Ilyushin 62M	Aria Air	THR	MHD
@@ -121,7 +112,6 @@ fatalities	file	type	opr	dep	dest
 1	20090804-0	ATR-72-212A (ATR-72-500)	Bangkok Airways	KBV	USM
 13	20090811-0	de Havilland Canada DHC-6 Twin Otter 300	Airlines PNG	POM	KKD
 1	20091022-0	Britten-Norman BN-2A-26 Islander	Divi Divi Air	CUR	BON
-2	20090207-0	Cessna 650 Citation III	Air One Executive	CIA	BLQ
 2	20091209-0	Beechcraft A100 King Air	Exact Air	YVO	YRC
 1	20091112-0	Canadair CL-600-2B19 Regional Jet CRJ-100ER		KGL	EBB
 90	20100125-0	Boeing 737-8AS (WL)	Ethiopian Airlines	BEY	ADD
@@ -175,7 +165,6 @@ fatalities	file	type	opr	dep	dest
 15	20120514-0	Dornier 228-212	Agni Air	PKR	JMO
 127	20120420-0	Boeing 737-236	Bhoja Airlines	KHI	ISB
 33	20120402-0	ATR-72-201	UTAir	TJM	SGC
-8	20120322-1	Beechcraft B300 Super King Air 350	INAER Helicopter Chile	PUQ	SCL
 32	20120819-0	Antonov 26-100	Alfa Airlines	KRT	
 4	20120822-0	Let L-410UVP-E9	Mombasa Air Safari		
 10	20120912-0	Antonov 28	Petropavlovsk-Kamchatsky Air Enterprise	PKC	UHPL
@@ -192,7 +181,6 @@ fatalities	file	type	opr	dep	dest
 5	20130213-0	Antonov 24RV	South Airlines	ODS	DOK
 9	20130306-0	Beechcraft B200 King Air	Aero Transporte SA - ATSA	LIM	SPIS
 1	20131211-0	Cessna 208B Grand Caravan	Makani Kai Air	LUP	HNL
-5	20131204-2	Britten-Norman BN-2A-3 Islander	Heringer Táxi Aéreo		SBCC
 33	20131129-0	Embraer ERJ 190-100 IGW (ERJ-190AR)	Linhas Aéreas de Moçambique - LAM	MPM	LAD
 3	20131125-0	Cessna 208B Grand Caravan	Tropicair	KUY	
 50	20131117-0	Boeing 737-53A	Tatarstan Airlines	DME	KZN
@@ -202,11 +190,8 @@ fatalities	file	type	opr	dep	dest
 14	20131014-0	Cessna 208B Grand Caravan	AereoServicio Guerrero	LTO	CUA
 2	20131010-0	de Havilland Canada DHC-6 Twin Otter 310	MASwings	BKI	KUD
 16	20131003-0	Embraer 120RT Brasilia	Associated Aviation	LOS	AKR
-2	20130805-0	Beechcraft B200 Super King Air	Mýflug Air	RKV	AEY
 3	20130706-0	Boeing 777-28EER	Asiana Airlines	ICN	SFO
-2	20140120-0	IRMA/Britten-Norman BN-2A-27 Islander	Scoala Superioara de Aviatie Civila	BBU	OMR
 18	20140216-0	de Havilland Canada DHC-6 Twin Otter 300	Nepal Airlines	PKR	JUM
-11	20140221-0	Antonov 26	Libyan Air Cargo		TUN
 239	20140308-0	Boeing 777-2H6ER	Malaysia Airlines	KUL	PEK
 8	20140419-0	British Aerospace BAe-125-700A	Líneas Aéreas Comerciales, SA - LACSA	CZM	SLW
 1	20140624-0	Airbus A310-324ET	Pakistan International Airlines - PIA	RUH	PEW
