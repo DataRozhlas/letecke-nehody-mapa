@@ -56,6 +56,12 @@ init = ->
       ..setMonth (parseInt((row.file.substr 4, 2), 10) - 1)
       ..setDate row.file.substr 6, 2
     row
+  min = parseInt do
+    window.location.hash.substr 1
+    10
+  if min
+    airports .= filter -> it.fatalities > min
+    allEvents .= filter -> it.fatalities > min
 
   for event in allEvents
     airportsAssoc[event.dep]?incidents.push event
