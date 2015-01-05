@@ -2,10 +2,10 @@ init = ->
   {world} = ig.data
   land = topojson.feature world, world.objects."land"
   width = 1000
-  height = 550
+  height = 650
   projection = d3.geo.mercator!
     ..scale width / (Math.PI * 2)
-    ..translate [width / 2, 350]
+    ..translate [width / 2, 420]
   path = d3.geo.path!
     ..projection projection
 
