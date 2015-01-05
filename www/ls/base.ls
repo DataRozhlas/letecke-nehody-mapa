@@ -2,7 +2,7 @@ init = ->
   {world} = ig.data
   land = topojson.feature world, world.objects."land"
   width = 1000
-  height = 650
+  height = 550
   projection = d3.geo.mercator!
     ..scale width / (Math.PI * 2)
     ..translate [width / 2, 350]
@@ -87,7 +87,7 @@ init = ->
   voronoi = d3.geom.voronoi!
     ..x ~> it.cx
     ..y ~> it.cy
-    ..clipExtent [[0, 0], [width, height - 100]]
+    ..clipExtent [[0, 0], [width, height]]
   voronoiPolygons = voronoi airports
 
   graphTip = new ig.GraphTip container
