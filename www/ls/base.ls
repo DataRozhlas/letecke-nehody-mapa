@@ -23,6 +23,9 @@ init = ->
     ..attr \class \countries
     ..datum topojson.mesh world, world.objects.countries, (a, b) -> a isnt b
     ..attr \d path
+  container.append \span
+    ..attr \class \attrib
+    ..html "Data &copy; <a target='_blank' href='http://aviation-safety.net'>Aviation-safety.net</a>"
 
   activeAptLinkGroup = svg.append \g
     ..attr \class \active-apt-link
@@ -87,7 +90,6 @@ init = ->
   voronoi = d3.geom.voronoi!
     ..x ~> it.cx
     ..y ~> it.cy
-    ..clipExtent [[0, 0], [width, height]]
   voronoiPolygons = voronoi airports
 
   graphTip = new ig.GraphTip container
