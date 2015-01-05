@@ -69,7 +69,8 @@ LOS	296	3.321156	6.577369	Murtala Muhammed	Lagos	Nigeria
 ABV	484	7.263172	9.006792	Nnamdi Azikiwe Intl	Abuja	Nigeria
 GYD	23	50.046667	40.4675	Heydar Aliyev	Baku	Azerbaijan
 SCO	23	51.091978	43.86005	Aktau	Aktau	Kazakhstan
-SPB	40	-122.861833	45.771028	Scappoose Industrial Airpark	San Luis	United States
+MPB	20	-80.1703	25.7783	Miami Seaplane Base	Miami	United States
+NSB	20	-79.25	25.767	Bimini North Seaplane Base	Bimini	Bahamas
 PHC	108	6.949594	5.015494	Port Harcourt Intl	Port Hartcourt	Nigeria
 BZE	3	-88.308203	17.539144	Philip S W Goldson Intl	Belize City	Belize
 YAZ	3	-125.7725	49.082222	Tofino	Tofino	Canada
@@ -146,8 +147,8 @@ SCPF	10	-72.917583	-41.454222	Marcel Marchant Airport	Puerto Montt	Chile
 SCLJ	1	-72.413139	-43.977611	La Junta Airport	La Junta	Chile
 DAM	30	36.514267	33.410636	Damascus Intl	Damascus	Syria
 SCMK	9	-73.738694	-43.894417	Melinka Airport	Melinka	Chile
-MAD	154	-3.566764	40.493556	Barajas	Madrid	Spain
 CAI	148	31.405556	30.121944	Cairo Intl	Cairo	Egypt
+LPA	154	-15.386586	27.931886	Gran Canaria	Gran Canaria	Spain
 FRU	65	74.477556	43.061306	Manas	Bishkek	Kyrgyzstan
 IKA	233	51.152222	35.416111	Imam Khomeini	Tehran	Iran
 GUA	11	-90.527475	14.583272	La Aurora	Guatemala City	Guatemala
@@ -294,4 +295,4 @@ OUA	116	-1.512417	12.353194	Ouagadougou	Ouagadougou	Burkina Faso
 ALG	116	3.215408	36.691014	Houari Boumediene	Algier	Algeria
 TCX	39	56.924444	33.595833	Tabas Airport	Tabas	Iran
 WTP	4	147.25	-8.533	Woitape Airport	Woitape	Papua New Guinea
-LPA	154	-15.386586	27.931886	Gran Canaria	Gran Canaria	Spain
+MAD	154	-3.566764	40.493556	Barajas	Madrid	Spain
