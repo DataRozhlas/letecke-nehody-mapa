@@ -30,7 +30,7 @@ class ig.IncidentList
           suff =
             | 1 < it.fatalities < 5 => "oběti"
             | 1 == it.fatalities => "oběť"
-            | otherwise => "oběťí"
+            | otherwise => "obětí"
           "#{it.fatalities} #suff"
       ..append \span
         ..attr \class \dep-dest
