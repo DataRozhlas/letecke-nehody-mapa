@@ -1,0 +1,1 @@
+[Interaktivní mapa: Odkud startovaly lety, jež skončily havárií](http://www.rozhlas.cz/zpravy/data/_zprava/interaktivni-mapa-odkud-startovaly-lety-jez-skoncily-havarii--1440480)
